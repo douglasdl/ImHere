@@ -14,8 +14,8 @@
 
 <br>
 <p align="center">
-    <a href="https://douglasdl.github.io/NLW6-Origin/">
-        <img alt="OriginSix" src="https://douglasdl.github.io/images/OriginSix.png" width="100%">
+    <a href="https://douglasdl.github.io/">
+        <img alt="I'm Here" src="https://douglasdl.github.io/images/ImHere.png" width="100%">
     </a>
 </p>
 
@@ -36,30 +36,78 @@ This project was developped using the following technologies:
     <a href="https://www.typescriptlang.org/"><img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"></a>
 </p>
 
-📚 Libraries
-- [Google Fonts](https://fonts.google.com/)
-- [SwiperJS](https://swiperjs.com/) or [SwipeJS (Github)](https://github.com/nolimits4web/Swiper)
-- [ScrollRevel](https://scrollrevealjs.org)
-- [Scroll Reveal](https://scrollrevealjs.org/)
-
-🛠 Utilities
-
-Sample Images
-- [Unsplash](https://unsplash.com/s/photos/hairdresser)
-- [Random User Generator](https://randomuser.me/)
-
-Icons
-- [IcoMoon App](https://icomoon.io/app/#/select)
-- [FlatIcon](https://www.flaticon.com/br/)
-- [IconFinder](https://www.iconfinder.com/)
-- [ReactIcons](https://react-icons.github.io/react-icons/icons?name=fi)
 
 ## 📐 Project
 
-This was a Foundation project from NLW6-Origin.
-Check the project online [here](https://douglasdl.github.io/NLW6-Origin/).
-OriginSix is an institutional page in the One Page format, responsive to be used in several company types, from micro, small and medi companies.
-It's coposed by the following sections: Header, Navigation, Home, About, Services, Testimonials, Contacts and Footer.
+This is a React Native project appling the basic fundamentals.
+Check the finished App on [Apple Store](https://douglasdl.github.io/) or on [Google Play](https://douglasdl.github.io/).
+I'm Here is a app to create a list of participants for an event, meeting or other activities.
+It's composed by the following items: Event Title, Event Date, Input component to type the participant name, Add Button to add the participant into the list, and a list containing the added participant names. Each participant component has a delete button to remove the participant from the list.
+When you add a new participant, it's verified if the input is not blank and if the name is unique in the list.
+
+# I'm Here App
+
+- [React Native Apps](https://reactnative.dev/showcase)
+
+App to check participants presence
+
+|      |         | macOS | Windows | Linux |
+|:----:|--------:|:-----:|:-------:|:-----:|
+| CLI  |     iOS |   ✓   |    x    |   x   |
+| CLI  | Android |   ✓   |    ✓    |   ✓   |
+| Expo |     iOS |   ✓   |    ✓    |   ✓   |
+| Expo | Android |   ✓   |    ✓    |   ✓   |
+
+
+|      |Development     | Native Folders|Access|
+|:----:|----------------|---------------|------|
+| Expo |Managed workflow|(ios, android) |   x  |
+|      |Bare workflow   |(ios, android) |   ✓  |
+
+               
+
+- [Expo](https://expo.dev/)
+- [Expo Go](https://expo.dev/client)
+
+CLI: Command line interface. (npm / yarn)
+        npm install -g library_name
+        yarn add library_name
+
+Expo:
+        expo install library_name
+
+[Environment Setup Expo](https://reactnative.dev/docs/environment-setup)
+[Environment Setup Rocketseat](https://react-native.rocketseat.dev/)
+
+## Check Node.js versions, install and use different versions
+List all available versions:
+```sh
+nvm ls-remote
+```
+Check the current version:
+```sh
+node -v
+```
+Install a new version:
+```sh
+nvm install v16.16.0
+```
+Use the new version:
+```sh
+nvm use v16.16.0
+```
+
+## Create a new project
+```sh
+expo init imhere --npm
+```
+
+- Select 'blank (TypeScript)'.
+
+## Start the project
+```sh
+expo start
+```
 
 ## 🔖 Layout
 
@@ -152,65 +200,3 @@ This project is under the MIT license. See the file [LICENSE](LICENSE.md) for mo
 ---
 
 Done with ♥ by [Douglas Dias Leal](mailto:douglasdiasleal87@gmail.com)
-
-
-
-
-# ImHere
-
-- [React Native Apps](https://reactnative.dev/showcase)
-
-App to check participants presence
-
-                macOS   Windows   Linux
-                  ✓       ✓         ✓
-CLI         iOS:  ✓       x         x
-        Android:  ✓       ✓         ✓
-Expo        iOS:  ✓       ✓         ✓
-        Android:  ✓       ✓         ✓
-
-Expo:   Managed workflow    (ios, android) x
-        Bare workflow       (ios, android) ✓
-
-[Expo](https://expo.dev/)
-[Expo Go](https://expo.dev/client)
-
-CLI: Command line interface. (npm / yarn)
-        npm install -g library_name
-        yarn add library_name
-
-Expo:
-        expo install library_name
-
-[Environment Setup Expo](https://reactnative.dev/docs/environment-setup)
-[Environment Setup Rocketseat](https://react-native.rocketseat.dev/)
-
-## Check Node.js versions, install and use different versions
-List all available versions:
-```sh
-nvm ls-remote
-```
-Check the current version:
-```sh
-node -v
-```
-Install a new version:
-```sh
-nvm install v16.16.0
-```
-Use the new version:
-```sh
-nvm use v16.16.0
-```
-
-## Create a new project
-```sh
-expo init imhere --npm
-```
-
-- Select 'blank (TypeScript)'.
-
-## Start the project
-```sh
-expo start
-```
