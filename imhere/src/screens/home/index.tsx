@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { 
     View, 
     Text, 
@@ -14,6 +14,8 @@ export function Home() {
 
     const [participants, setParticipants] = useState<string[]>([]);
     const [participantName, setParticipantName] = useState('');
+    const [eventName, setEventName] = useState("Lista de Participantes");
+    const [eventDate, setEventDate] = useState('');
 
     //const participants = ['Douglas', 'Karina', 'Kaori', 'Yuna', 'Tom', 'Jacqueline', 'Milena', 'Mateus']
 
@@ -49,14 +51,28 @@ export function Home() {
         
     }
 
+    useEffect(() => {
+        let day = new Date().getDay();
+        const days = ['Domingo', 'Segunda-feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'];
+        let dayName = days[day];
+        let date = new Date().getDate();
+        let month = new Date().getMonth() + 1;
+        const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        let monthName = monthNames[month];
+        var year = new Date().getFullYear();
+        setEventDate(`${dayName}, ${date} de ${monthName} de ${year}`);
+    }, []);
+
     return (
         <View style={styles.container}>
             <Text style={styles.eventName}>
-                Nome do Evento
+                { eventName }
             </Text>
 
             <Text style={styles.eventDate}>
-                Sexta-feira, 4 de Novembro de 2022
+                {/* Sexta-feira, 4 de Novembro de 2022 */}
+                { eventDate }
             </Text>
 
             <View style={styles.form}>
